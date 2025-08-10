@@ -1,1 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  align-items: center;
+}
+
+.page-border {
+  height: 100%;
+  padding: 20px;
+}
+
+.grey-container {
+  background-color: #f1f1f1;
+  height: 350px;
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.balance {
+  font-size: 32px;
+  color: green;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deposit {
+  background-color: #28a745;
+}
+
+.withdraw {
+  background-color: #dc3545;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 20px 15px;
+  }
+
+  .balance {
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+}
 
