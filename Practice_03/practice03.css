@@ -1,1 +1,79 @@
+:root {
+    --header-bg: #4CAF50;
+    --sidebar-bg: #f0f0f0;
+    --content-bg: #ffffff;
+    --footer-bg: #4CAF50;
+    --text-color: #000000;
+    --link-color: purple;
+}
+
+body.dark-mode {
+    --header-bg: #2c2c2c;
+    --sidebar-bg: #3a3a3a;
+    --content-bg: #1e1e1e;
+    --footer-bg: #2c2c2c;
+    --text-color: #dddddd;
+    --link-color: violet;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    height: 100vh;
+    border: 2px solid #444;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+header {
+    grid-area: header;
+    background: var(--header-bg);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+header label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+aside {
+    grid-area: sidebar;
+    background: var(--sidebar-bg);
+    padding: 20px;
+}
+
+aside a {
+    display: block;
+    color: var(--link-color);
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+main {
+    grid-area: main;
+    background: var(--content-bg);
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background: var(--footer-bg);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
 
