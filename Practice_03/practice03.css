@@ -29,8 +29,19 @@ body {
         "footer footer";
     height: 100vh;
     border: 2px solid #444;
-    max-width: 800px;
-    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr; 
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+    aside {
+        display: none; 
+    }
 }
 
 header {
