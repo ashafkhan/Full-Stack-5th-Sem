@@ -1,1 +1,40 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link href="practice03.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span>Admin Dashboard</span>
+        <label>
+            <input type="checkbox" id="themeToggle"> Dark Mode
+        </label>
+    </header>
+
+    <aside>
+        <a href="#">Home</a>
+        <a href="#">Users</a>
+        <a href="#">Settings</a>
+    </aside>
+
+    <main>
+        <h3>Welcome, Admin!</h3>
+        <p>This is the main content area. Add charts, tables, or reports here.</p>
+    </main>
+
+    <footer>
+        &copy; 2025 Admin Panel
+    </footer>
+
+<script>
+    document.getElementById('themeToggle').addEventListener('change', function() {
+        document.body.classList.toggle('dark-mode', this.checked);
+    });
+</script>
+</body>
+</html>
