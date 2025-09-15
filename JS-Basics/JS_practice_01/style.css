@@ -1,1 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+  transition: border 0.2s ease;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
+
+.counter {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: #555;
+}
+
+.counter.exceeded {
+  color: red;
+  font-weight: bold;
+}
